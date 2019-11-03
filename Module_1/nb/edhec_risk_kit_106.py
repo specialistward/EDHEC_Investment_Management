@@ -89,7 +89,7 @@ def semideviation(r):
     return r[is_negative].std(ddof=0)
 
 
-def var_historic(r, level=5):
+def var_historic(r, level=1):
     """
     Returns the historic Value at Risk at a specified level
     i.e. returns the number such that "level" percent of the returns
@@ -118,7 +118,7 @@ def cvar_historic(r, level=5):
 
 
 from scipy.stats import norm
-def var_gaussian(r, level=5, modified=False):
+def var_gaussian(r, level=1, modified=False):
     """
     Returns the Parametric Gauusian VaR of a Series or DataFrame
     If "modified" is True, then the modified VaR is returned,

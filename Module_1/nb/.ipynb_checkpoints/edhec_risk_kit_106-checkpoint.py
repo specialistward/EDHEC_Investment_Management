@@ -118,7 +118,7 @@ def cvar_historic(r, level=5):
 
 
 from scipy.stats import norm
-def var_gaussian(r, level=5, modified=False):
+def var_gaussian(r, level=1, modified=False):
     """
     Returns the Parametric Gauusian VaR of a Series or DataFrame
     If "modified" is True, then the modified VaR is returned,
